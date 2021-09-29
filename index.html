@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let altura=prompt("Informe sua altura:","")
+        console.log(altura)
+        let peso=prompt("Informe seu peso", "")
+        console.log(peso)
+        imc=peso / (altura*altura)
+
+        if(imc >=17.0 && imc < 18.4){
+         texto = ("Magreza grau I")
+        }else if(imc >=18.5 && imc < 24.9){
+         texto = ("Adequado")
+        }else if(imc >=25.0 && imc < 29.9){
+         texto = ("Pré-obeso")
+        }else if(imc >=30.0 && imc < 34.9){
+         texto = ("Obesidade grau I")
+        }else{
+         texto = ("Sem resultado")
+        }
+
+        alert ("O seu IMC é: " + imc + "e sua classificação é: " + texto + ".")
+
+    </script>
+</body>
+</html>
